@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/bot_screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:gravity="right"
+        android:textSize="75sp"
+        android:paddingRight="25dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="165dp"
+        android:autoSizeTextType="uniform"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:backgroundTint="@android:color/black">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="click"
+            android:tag="AC"
+            android:text="AC"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <Button
+            android:tag="("
+            android:text="("
+            style="@style/ButtonStyle"
+            android:onClick="click"/>
+
+        <Button
+            android:tag=")"
+            android:text=")"
+            style="@style/ButtonStyle"
+            android:onClick="click"/>
+
+        <Button
+            android:tag="+"
+            android:text="+"
+            style="@style/ButtonStyle"
+            android:onClick="click"/>
+
+        <Button
+            android:tag="1"
+            style="@style/ButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:tag="2"
+            style="@style/ButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:tag="3"
+            style="@style/ButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:tag="-"
+            style="@style/ButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:tag="4"
+            style="@style/ButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:tag="5"
+            style="@style/ButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:tag="6"
+            style="@style/ButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:tag="*"
+            style="@style/ButtonStyle"
+            android:text="×" />
+
+        <Button
+            android:tag="7"
+            style="@style/ButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:tag="8"
+            style="@style/ButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:tag="9"
+            style="@style/ButtonStyle"
+            android:text="9" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:tag="/"
+            android:text="÷"  />
+
+        <Button
+            android:tag="DEL"
+            style="@style/ButtonStyle"
+            android:text="DEL" />
+
+        <Button
+            android:tag="0"
+            style="@style/ButtonStyle"
+            android:text="0" />
+
+        <Button
+            android:tag="."
+            android:text="."
+            style="@style/ButtonStyle"
+            android:onClick="click"/>
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:width="0dp"
+            android:height="0dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:onClick="calc"
+            android:tag="="
+            android:text="="
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            />
+
+
+    </GridLayout>
+
+
+</LinearLayout>
